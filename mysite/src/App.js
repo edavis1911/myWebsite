@@ -5,10 +5,8 @@ import {
 	Link
 } from 'react-router-dom';
 
-import {Navbar, NavbarCollapse} from 'react-bootstrap';
-
 //Components
-import Navbar from './components/navComponent/header';
+import Header from './components/navComponent/header';
 
 //Pages
 import Intro from './components/pages/intro';
@@ -18,15 +16,13 @@ import Experience from './components/pages/experience';
 // SASS compiled css
 import './Assets/css/default.min.css';
 
-// React-Bootstrap
-import 'bootstrap/less/bootstrap.less';
 
 class App extends Component {
   render() {
     return (
       <Router>
       <div className="App">
-            <Navbar />
+            <Header />
             <Intro />
             <Summary />
             <Experience />
